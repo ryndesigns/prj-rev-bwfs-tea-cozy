@@ -1,0 +1,116 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+}
+
+/* HEADER SECTION */
+header {
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid seashell;
+  /*display: flex;*/
+  margin: 0 auto;
+  height: 69px;
+  width: 100%;
+  /*padding-top: 10px;*/
+  align-items: center;
+  background-color: inherit;
+}
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* NAVIGATION SECTION */
+a {
+  text-decoration: underline;
+  color: seashell;
+}
+nav {
+  text-align: right;
+  display: block;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/* MAIN CONTAINER */
+/*need to figure out how to hide main contianer behind header at top*/
+.main {
+  padding-top: 69px;
+  width: 1200px;
+  margin: auto;
+}
+
+/* MISSION SECTION */
+#mission {
+  height: 700px; /*why did adding height here pad the next section?*/
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  padding-top: 69px;
+}
+#mission .content {
+  width: 100%;
+  margin: auto;
+  background-color: black;
+}
+
+/* TEA SECTION */
+#tea {
+  width: 1000px;
+  margin: auto;
+  padding-top: 69px;
+  height: 700px;
+}
+
+.item img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  display: block;
+}
+.item span {
+  font-weight: bold;
+}
+.item {
+  margin: 5px;
+}
+
+/* LOCATION SECTION */
+#locations {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  padding-top: 69px;
+  height: 500px;
+}
+.location {
+  width: 300px;
+  background-color: black;
+  margin: 15px 40px;
+  display: flex;
+  flex-direction: column;
+}
+#locations .flex-container {
+  margin: auto;
+}
+/* CONTACT SECTION */
+.contact {
+  height: 200px;
+}
+
+/* FOOTER SECTION */
+footer {
+  text-align: left;
+  padding-left: 20px;
+}
